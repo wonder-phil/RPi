@@ -1,0 +1,28 @@
+<domain type='kvm' xmlns:qemu='http://libvirt.org/schemas/domain/qemu/1.0'>
+  <name>QEMUGuest1</name>
+  <uuid>c7a5fdbd-edaf-9455-926a-d65c16db1808</uuid>
+  <qemu:commandline>
+	<qemu:arg value='-M'/>
+	<qemu:arg value='versatilepb'/>
+	<qemu:arg value='-cpu'/>
+	<qemu:arg value='arm1176'/>
+	<qemu:arg value='-m'/>
+	<qemu:arg value='256'/>
+	<qemu:arg value='-hda'/>
+	<qemu:arg value='./2021-05.qcow2'/>
+	<qemu:arg value='-net'/>
+	<qemu:arg value='nic,macaddr=10:20:30:40:50:66'/>
+	<qemu:arg value='-net'/>
+	<qemu:arg value='tap,ifname=tap0,script=no,downscript=no'/>
+	<qemu:arg value='-dtb'/>
+	<qemu:arg value='./versatile-pb.dtb'/>
+	<qemu:arg value='-kernel'/>
+	<qemu:arg value='./qemukernel'/>
+	<qemu:arg value='-append'/>
+	<qemu:arg value='root=/dev/sda2 panic=1 rootfstype=ext4 rw'/>
+	<qemu:arg value='-no-reboot'/>
+	<qemu:arg value=''/>
+  </qemu:commandline>
+</domain>
+
+
