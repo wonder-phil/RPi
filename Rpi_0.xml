@@ -1,9 +1,9 @@
+<!--
 https://kimtinh.gitlab.io/post/tech/2019_05_20_qemu_rpi/#gsc.tab=0
-
-https://kimtinh.gitlab.io/post/tech/2019_05_20_qemu_rpi/#gsc.tab=0
+-->
 
 <domain type='qemu'>
-  <name>rpi</name>
+  <name>rpi_0</name>
   <uuid>b6dc9356-f772-4f63-bf78-0fe5f9f11923</uuid>
   <memory unit='KiB'>262144</memory>
   <currentMemory unit='KiB'>262144</currentMemory>
@@ -38,9 +38,5 @@ https://kimtinh.gitlab.io/post/tech/2019_05_20_qemu_rpi/#gsc.tab=0
       <image compression='off'/>
       <gl enable='no' rendernode='/dev/dri/by-path/pci-0000:00:02.0-render'/>
     </graphics>
-    <video>
-      <model type='virtio' heads='1' primary='yes'/>
-      <address type='pci' domain='0x0000' bus='0x00' slot='0x05' function='0x0'/>
-    </video>
   </devices>
 </domain>
